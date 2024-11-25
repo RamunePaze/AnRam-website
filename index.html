@@ -68,19 +68,60 @@
       background-color: #C70039;
     }
 
-    .features {
+    .features, .shop, .about-us {
       padding: 50px 20px;
       text-align: center;
     }
 
-    .features h2 {
+    .features h2, .shop h2, .about-us h2 {
       margin-bottom: 20px;
       font-size: 2.5em;
     }
 
-    .features p {
+    .features p, .shop p, .about-us p {
       font-size: 1.1em;
       margin-bottom: 10px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      max-width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .product button {
+      padding: 10px 15px;
+      background-color: #FF5733;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #C70039;
     }
 
     .footer {
@@ -99,13 +140,18 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
   <!-- Navigacijos juosta -->
   <div class="navbar">
     <div class="logo">
-      <a href="#">AnRam</a>
+      <img src="image.png" alt="AnRam logotipas" class="logo">
     </div>
     <div class="menu">
       <a href="#parduotuve">Parduotuvė</a>
@@ -122,12 +168,40 @@
     <button onclick="window.location.href='#parduotuve'">Pirkti dabar</button>
   </div>
 
+  <!-- Parduotuvės skyrius -->
+  <div class="shop" id="parduotuve">
+    <h2>Parduotuvė</h2>
+    <p>Peržiūrėkite mūsų naujausius *AnRam* modelius.</p>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="AnRam Juoda">
+        <h3>AnRam - Juoda</h3>
+        <p>€99.99</p>
+        <button>Pirkti dabar</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="AnRam Smėlio spalva">
+        <h3>AnRam - Smėlio spalva</h3>
+        <p>€99.99</p>
+        <button>Pirkti dabar</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Savybių skyrius -->
   <div class="features" id="savybes">
     <h2>Kodėl rinktis AnRam?</h2>
     <p>✔ Dviguba funkcija: Rankinė ir Kuprinė.</p>
     <p>✔ Aukštos kokybės PU oda ilgaamžiškumui ir stiliui.</p>
     <p>✔ Talpūs skyreliai kasdieniams reikmenims.</p>
+    <p>✔ Sukurta aktyviam gyvenimo būdui.</p>
+  </div>
+
+  <!-- Apie mus skyrius -->
+  <div class="about-us" id="apie">
+    <h2>Apie mus</h2>
+    <p>„AnRam“ – tai prekinis ženklas, sukurtas sujungti stilių ir praktiškumą. Mūsų rankinės-kuprinės skirtos aktyviems žmonėms, kurie vertina funkcionalumą ir išskirtinį dizainą. Esame įsipareigoję kokybei, inovacijoms ir jūsų patogumui.</p>
+    <p>Kiekvienas gaminys – tai apgalvotų sprendimų ir modernios estetikos rezultatas, siekiant prisitaikyti prie jūsų gyvenimo būdo.</p>
   </div>
 
   <!-- Apačios juosta -->
@@ -138,3 +212,4 @@
   </div>
 </body>
 </html>
+
