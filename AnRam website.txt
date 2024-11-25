@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnRam - Stilius ir Funkcionalumas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigacijos juosta */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #FF5733;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #C70039;
+    }
+
+    .features {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+
+    .features p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigacijos juosta -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="#">AnRam</a>
+    </div>
+    <div class="menu">
+      <a href="#parduotuve">Parduotuvė</a>
+      <a href="#savybes">Savybės</a>
+      <a href="#apie">Apie mus</a>
+      <a href="#kontaktai">Kontaktai</a>
+    </div>
+  </div>
+
+  <!-- Hero skyrius -->
+  <div class="hero">
+    <h1>Stilius ir Funkcionalumas</h1>
+    <p>Rankinė-kuprinė, prisitaikanti prie jūsų gyvenimo.</p>
+    <button onclick="window.location.href='#parduotuve'">Pirkti dabar</button>
+  </div>
+
+  <!-- Savybių skyrius -->
+  <div class="features" id="savybes">
+    <h2>Kodėl rinktis AnRam?</h2>
+    <p>✔ Dviguba funkcija: Rankinė ir Kuprinė.</p>
+    <p>✔ Aukštos kokybės PU oda ilgaamžiškumui ir stiliui.</p>
+    <p>✔ Talpūs skyreliai kasdieniams reikmenims.</p>
+  </div>
+
+  <!-- Apačios juosta -->
+  <div class="footer">
+    <p>&copy; 2024 AnRam. Visos teisės saugomos.</p>
+    <a href="#">Privatumo politika</a>
+    <a href="#">Naudojimo sąlygos</a>
+  </div>
+</body>
+</html>
